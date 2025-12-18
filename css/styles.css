@@ -1,0 +1,16 @@
+.shipping-method-item input {
+  display: none;
+}
+
+.shipping-method-item label {
+  margin-bottom: 0;
+}
+
+.shipping-method-item .shipping-method-label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.shipping-method-item .shipping-method-description p:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Theme override for single shipping method radio button.
+ */
+#}
+{%
+  set classes = [
+  'shipping-method-item',
+]
+%}
+
+<div {{ attributes.addClass('shipping-method-radios') }}>
+  <div class="shipping-method-radios-items">
+    {{ children }}
+
+    {% if element['#title'] %}
+      <div class="shipping-method-label">
+        {{ element['#title'] }}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if description %}
+    <div{{ description.attributes.addClass('shipping-method-description') }}>
+      <p>{{ description.content }}</p>
+    </div>
+  {% endif %}
+</div>

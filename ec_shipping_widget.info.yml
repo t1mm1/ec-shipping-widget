@@ -1,0 +1,9 @@
+name: 'EC Shipping Widget'
+type: module
+description: 'Custom shipping method widget with descriptions'
+core_version_requirement: ^10 || ^11
+package: Commerce
+dependencies:
+  - drupal:commerce_shipping
+
+weight: 100
